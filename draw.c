@@ -12,7 +12,7 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
   int mode; //0 = Octant 1, 1 = Octant 2, 2 = Octant 3...
 
   if(x0>x1){   //Swap if Octant 3-6
-    printf("swap used \n");
+    // printf("swap used \n");
     int temp = x1;
     x1 = x0;
     x0 = temp;
@@ -42,7 +42,7 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     }
   }
 
-  printf("mode: %d\n",mode);
+  // printf("mode: %d\n",mode);
 
 
 
@@ -93,7 +93,7 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
   }
 
   else if (mode == 2){ //Octant 8
-    printf("Octant 8 running \n");
+    // printf("Octant 8 running \n");
     int a = (y1-y0);
     int b = -((x1-x0));
     int d = 2*a-b;
